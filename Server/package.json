@@ -1,20 +1,19 @@
 {
-  "name": "graphql",
-  "version": "1.0.0",
-  "description": "",
+  "name": "job-server",
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Silvasss/GraphQL.git"
+  "scripts": {
+    "start": "nodemon --ext js,graphql --ignore data/ server.js"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Silvasss/GraphQL/issues"
-  },
-  "homepage": "https://github.com/Silvasss/GraphQL#readme",
   "dependencies": {
-    "apollo-server": "^3.11.1",
-    "graphql": "^16.6.0"
+    "apollo-server-express": "^3.11.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-jwt": "^8.2.1",
+    "fakebase": "^0.3.0",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
